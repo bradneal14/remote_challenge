@@ -1,6 +1,12 @@
-td, th {
+td {
   border: 1px solid black;
   height: 100px;
+}
+
+th{
+  border: 1px solid black;
+  height: 100px;
+position: fixed;
 }
 
 table {
@@ -9,6 +15,50 @@ table {
   width: 100%;
  }
 
+ .scrollableTable{
+
+ }
+ .fixedHeader{
+
+ }
+ thead.fixedHeader tr {
+	position: relative
+}
+
+.alternateHeader{
+  width: 100%;
+}
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+	display: block
+}
+
+/* make the TH elements pretty */
+thead.fixedHeader th {
+	border-left: 1px solid #EB8;
+	border-right: 1px solid #B74;
+	border-top: 1px solid #EB8;
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left
+}
+
+.headerDivContainer{
+  height: 50px;
+  background-color: green;
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+
+.headerDivElement{
+  flex: 1;
+  height:100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
  .tableContainer{
    border-color: red;
    width: calc(100%-4px)%;
