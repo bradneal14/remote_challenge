@@ -30,24 +30,26 @@ table {
 }
 /* set THEAD element to have block level attributes. All other non-IE browsers            */
 /* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
-html>body thead.fixedHeader tr {
+/*html>body thead.fixedHeader tr {
 	display: block
 }
 
 /* make the TH elements pretty */
-thead.fixedHeader th {
+/*thead.fixedHeader th {
 	border-left: 1px solid #EB8;
 	border-right: 1px solid #B74;
 	border-top: 1px solid #EB8;
 	font-weight: normal;
 	padding: 4px 3px;
 	text-align: left
+}*/
+.bodyDivContainer{
+  margin-top: 50px;
 }
-
 .headerDivContainer{
   height: 50px;
   background-color: green;
-  width: 100%;
+  width: calc(83% - 4px);
   display: flex;
   position: fixed;
 }
@@ -61,8 +63,7 @@ thead.fixedHeader th {
 }
  .tableContainer{
    border-color: red;
-   width: calc(100%-4px)%;
-   height: 589px;
+   height: calc(100% - 137px);;
    overflow: scroll;
    display: inherit;
    border-width: 14px;
@@ -92,6 +93,7 @@ thead.fixedHeader th {
 
 .mainEvent{
   flex: 5;
+  height: 100%;
 }
 
 
