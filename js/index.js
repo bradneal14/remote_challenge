@@ -1,3 +1,4 @@
+// var Actions = require("./actions.js");
 function addCSSClass (elem, className) {
 	removeClassName (elem, className);
 	elem.className = (elem.className + " " + className).trim();
@@ -59,6 +60,18 @@ function handleModal(){
   }
 }
 
+
+function toggleSignin(){
+	console.log("we made it into the function")
+	var signin = document.getElementById("signin-page");
+	var main = document.getElementById("main-page");
+	signin.className = signin.className.replace(/\bvisi\b/,'hide');
+	main.className = main.className.replace(/\bhide\b/,'visi');
+}
+
+
+
+$('#signinButton').click(toggleSignin);
 
 
 
