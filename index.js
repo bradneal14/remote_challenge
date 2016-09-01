@@ -1,5 +1,6 @@
 // var Actions = require("./actions.js");
 function addCSSClass (elem, className) {
+	//this function adds a css class to ele
 	removeClassName (elem, className);
 	elem.className = (elem.className + " " + className).trim();
 }
@@ -32,7 +33,6 @@ function stripedTable() {
 
 function handleModal(){
   console.log("the modal is being handled")
-
   // Get the modal
   var modal = document.getElementById('myModal');
 
@@ -70,8 +70,8 @@ function toggleSignin(){
 }
 
 
-
-$('#signinButton').click(toggleSignin);
+//
+// $('#signinButton').click(toggleSignin);
 
 
 
