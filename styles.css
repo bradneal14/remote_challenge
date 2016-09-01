@@ -19,7 +19,7 @@ table {
  .background{
    height: 100%;
    width: 100%;
-   background-image: url("../img/phong_nha.jpg");
+   background-image: url("./phong_nha.jpg");
    background-size: cover;
    display: flex;
  }
@@ -106,7 +106,7 @@ flex-direction: column;
 
 
 .expensifyLogo{
-  background-image: url("../img/expensify-logo.png");
+  background-image: url("./expensify-logo.png");
 height: 30px;
 width: 216px;
 background-size: cover;
